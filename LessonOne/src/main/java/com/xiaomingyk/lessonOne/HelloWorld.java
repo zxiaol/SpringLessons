@@ -15,5 +15,14 @@ public class HelloWorld {
 
         System.out.println("Message:" + message);
     }
+
+    public void init(){
+        System.out.println("Entering Hello world");
+    }
+
+
+    public void destroy(){
+        System.out.println("Exit Hello world");
+    }
 }
 

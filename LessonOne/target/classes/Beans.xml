@@ -5,8 +5,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="helloWorld" class="com.xiaomingyk.lessonOne.HelloWorld">
-        <property name="message" value="Hello World!"/>
+    <bean id="helloWorldP" class="com.xiaomingyk.lessonOne.HelloWorld" scope="prototype" init-method="init" destroy-method="destroy">
+        <property name="message" value="Hello prototype!"/>
+    </bean>
+
+    <bean id="helloWorldS" class="com.xiaomingyk.lessonOne.HelloWorld" scope="singleton" init-method="init" destroy-method="destroy">
+        <property name="message" value="Hello !"/>
     </bean>
 
 </beans>
