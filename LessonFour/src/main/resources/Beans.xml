@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+    <bean id="class" class="com.xiaomingyk.lessonFour.Class" scope="prototype" autowire="byType">
+        <property name="lectures">
+            <map>
+                <entry key-ref="lecture0" value-ref="person2"/>
+                <entry key-ref="lecture1" value-ref="person3"/>
+            </map>
+        </property>
+
+        <property name="properties">
+            <props>
+                <prop key="className">class1</prop>
+                <prop key="gradeName">grade1</prop>
+            </props>
+        </property>
+
+    </bean>
+
+    <bean abstract="true" id="abstractPerson" class="com.xiaomingyk.lessonFour.Person" >
+        <property name="name" value="zhangsan"/>
+        <property name="gender" value="male"/>
+    </bean>
+
+    <bean id="person" class="com.xiaomingyk.lessonFour.Person" >
+        <property name="name" value="defaultPerson"/>
+        <property name="gender" value="male"/>
+    </bean>
+
+
+    <bean id="person0" class="com.xiaomingyk.lessonFour.Person" parent="abstractPerson" >
+        <property name="name" value="zhangsanS"/>
+    </bean>
+
+    <bean id="person1" class="com.xiaomingyk.lessonFour.Person" parent="abstractPerson" >
+        <property name="name" value="lisiS"/>
+    </bean>
+
+    <bean id="person2" class="com.xiaomingyk.lessonFour.Person" parent="abstractPerson" >
+        <property name="name" value="woT"/>
+        <property name="gender" value="female"/>
+    </bean>
+
+    <bean id="person3" class="com.xiaomingyk.lessonFour.Person" parent="abstractPerson" >
+        <property name="name" value="hjT"/>
+        <property name="gender" value="female"/>
+    </bean>
+
+    <bean id="lecture0" class="com.xiaomingyk.lessonFour.Lecture" >
+        <property name="name" value="yuwen"/>
+        <property name="classTimes" >
+            <set>
+                <value>Monday</value>
+                <value>Wednesday</value>
+            </set>
+        </property>
+    </bean>
+
+
+    <bean id="lecture1" class="com.xiaomingyk.lessonFour.Lecture" >
+        <property name="name" value="shuxue"/>
+        <property name="classTimes" >
+            <set>
+                <value>Thursday</value>
+                <value>Friday</value>
+            </set>
+        </property>
+    </bean>
+
+
+
+</beans>
