@@ -9,6 +9,7 @@
         <module name="LessonFive" />
         <module name="LessonFour" />
         <module name="LessonOne" />
+        <module name="LessonSix" />
         <module name="LessonThree" />
         <module name="LessonTwo" />
       </profile>
@@ -17,6 +18,7 @@
       <module name="LessonFive" target="1.5" />
       <module name="LessonFour" target="1.5" />
       <module name="LessonOne" target="1.5" />
+      <module name="LessonSix" target="1.5" />
       <module name="LessonThree" target="1.5" />
       <module name="LessonTwo" target="1.5" />
       <module name="SpringLessons" target="1.5" />
