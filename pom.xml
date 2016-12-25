@@ -13,6 +13,7 @@
         <module>LessonTwo</module>
         <module>LessonThree</module>
         <module>LessonFour</module>
+        <module>LessonFive</module>
     </modules>
 
     <dependencies>

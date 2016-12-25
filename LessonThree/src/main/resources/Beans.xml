@@ -36,25 +36,25 @@
 
     </bean>
 
-    <bean abstract="true" id="abstractPerson" class="com.xiaomingyk.lessonThree.Person" >
+    <bean abstract="true" id="abstractPerson" class="com.xiaomingyk.lessonThree.com.xiaomingyk.lessonFive.Person" >
         <property name="name" value="zhangsan"/>
         <property name="gender" value="male"/>
     </bean>
 
-    <bean id="person0" class="com.xiaomingyk.lessonThree.Person" parent="abstractPerson" >
+    <bean id="person0" class="com.xiaomingyk.lessonThree.com.xiaomingyk.lessonFive.Person" parent="abstractPerson" >
         <property name="name" value="zhangsanS"/>
     </bean>
 
-    <bean id="person1" class="com.xiaomingyk.lessonThree.Person" parent="abstractPerson" >
+    <bean id="person1" class="com.xiaomingyk.lessonThree.com.xiaomingyk.lessonFive.Person" parent="abstractPerson" >
         <property name="name" value="lisiS"/>
     </bean>
 
-    <bean id="person2" class="com.xiaomingyk.lessonThree.Person" parent="abstractPerson" >
+    <bean id="person2" class="com.xiaomingyk.lessonThree.com.xiaomingyk.lessonFive.Person" parent="abstractPerson" >
         <property name="name" value="woT"/>
         <property name="gender" value="female"/>
     </bean>
 
-    <bean id="person3" class="com.xiaomingyk.lessonThree.Person" parent="abstractPerson" >
+    <bean id="person3" class="com.xiaomingyk.lessonThree.com.xiaomingyk.lessonFive.Person" parent="abstractPerson" >
         <property name="name" value="hjT"/>
         <property name="gender" value="female"/>
     </bean>
