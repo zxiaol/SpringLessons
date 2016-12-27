@@ -15,6 +15,7 @@
         <module>LessonFour</module>
         <module>LessonFive</module>
         <module>LessonSix</module>
+        <module>LessonSeven</module>
     </modules>
 
     <dependencies>
